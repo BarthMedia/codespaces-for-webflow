@@ -12,10 +12,9 @@
 
     <link rel="stylesheet" href="src/sass/main.css" /> -->
     <script src="/index.e37f48ea.js" defer=""></script>
-    <webflow_io auto-redirect="false" src="https://xano-test-application.webflow.io"></webflow_io>
     <webflow_documentation true=""></webflow_documentation>
 
-    <title>[BMG.studio] - Studio Form</title>
+    <title>[BMG.studio] - Codespaces for Webflow</title>
   </head>
 
   <body>
@@ -28,9 +27,6 @@
                 <div class="margin-bottom margin-xsmall">
                   <h1>Welcome!</h1>
                 </div>
-                <div>Here is your development url:</div>
-                <div bmg-elemnet="URL_PLACEHOLDER">...</div>
-                <br>
                 <div class="margin-top margin-tiny">
                   <div>Here is your development snippet:</div>
                   <div bmg-elemnet="SNIPPET_PLACEHOLDER">...</div>
@@ -44,29 +40,19 @@
 
     <!-- Template standard script -->
     <script>// Elements
-const script = document.querySelector("head").querySelector("script"), urlPlaceholer = document.querySelector('[bmg-elemnet="URL_PLACEHOLDER"]'), snippetPlaceholer = document.querySelector('[bmg-elemnet="SNIPPET_PLACEHOLDER"]'), webflowIo = document.querySelector("webflow_io"), webflowDoc = document.querySelector("webflow_documentation");
+const script = document.querySelector("head").querySelector("script"), snippetPlaceholer = document.querySelector('[bmg-elemnet="SNIPPET_PLACEHOLDER"]'), webflowDoc = document.querySelector("webflow_documentation");
 // Values
-const jsSrc = script.src, webflowSrc = webflowIo.getAttribute("src"), webflowDocUrl = "https://bmg.studio/documentation/github-template";
+const jsSrc = script.src, webflowDocUrl = "https://www.bmg.studio/codespaces-for-webflow";
 // Actions
-urlPlaceholer.innerText = "";
-urlPlaceholer.insertAdjacentHTML("afterbegin", `<a href=${webflowSrc}>${webflowSrc}</a>`);
 snippetPlaceholer.innerHTML = "";
 snippetPlaceholer.insertAdjacentHTML("afterbegin", `<pre><code>&lt;!-- ${document.title} -->
 &lt;script defer src="${jsSrc}">&lt;/script></code></pre>`);
 // Logic
-if (webflowIo.getAttribute("auto-redirect") == "true") {
+if (webflowDoc.hasAttribute("true")) {
     // Elements
     const h1 = document.querySelector("h1");
     // Values 
-    const url = `${webflowDocUrl}?w_io=${webflowSrc}&h_url=${jsSrc}&d_title=${document.title}`;
-    // Actions
-    h1.innerText = "Redirecting...";
-    window.location.href = webflowSrc;
-} else if (webflowDoc.hasAttribute("true")) {
-    // Elements
-    const h1 = document.querySelector("h1");
-    // Values 
-    const url = `${webflowDocUrl}?w_io=${webflowSrc}&h_url=${jsSrc}&d_title=${document.title}`;
+    const url = `${webflowDocUrl}?w_io=${"https://bmg.studio/get-started/"}&h_url=${jsSrc}&d_title=${document.title}`;
     // Actions
     h1.innerText = "Redirecting...";
     window.location.href = url;

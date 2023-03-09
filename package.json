@@ -1,5 +1,5 @@
 {
-  "name": "@bmg/github-template",
+  "name": "codespaces-for-weblfow",
   "version": "0.0.0",
   "description": "Minimalistic template repository for building rich native JavaScript / jQuery applications for Webflow",
   "default": "src/index.html",
