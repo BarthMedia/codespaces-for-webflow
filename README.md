@@ -4,9 +4,9 @@ A minimalist template repository for building rich native JavaScript/jQuery appl
 
 ---
 
-## 🎥 YouTube Preview Video
+## 🎥 Loom Preview Video
 
-[![YouTube Preview Video](https://img.youtube.com/vi/RI51iH61ccY/0.jpg)](https://www.youtube.com/watch?v=RI51iH61ccY)
+[![Loom Preview Video]](https://www.loom.com/share/7cea968a8e9c4903b34ebddc700fe2a2)
 
 ---
 
