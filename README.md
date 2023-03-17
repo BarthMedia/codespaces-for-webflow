@@ -10,6 +10,12 @@ A minimalist template repository for building rich native JavaScript/jQuery appl
 
 ---
 
+## 🎥 How to go live / Host the production ready file (for free!)
+
+[![Loom Preview Video]](https://www.loom.com/share/51f41b12a2f4410bacfd822c31cab63d)
+
+---
+
 ## 🚀 Getting Started
 
 ### Using GitHub Codespaces
